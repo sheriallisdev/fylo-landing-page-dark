@@ -257,6 +257,7 @@ button {
     }
   }
 }
+
 // Sign Up Styling
 .sign-up {
   .card__sign-up {
@@ -282,4 +283,23 @@ button {
   }
 }
 
+// Footer Styling
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+
+  p {
+    text-align: left;
+  }
+
+  .icon {
+    padding-right: 18px;
+  }
+
+  .footer-nav {
+    list-style: none;
+  }
 }
