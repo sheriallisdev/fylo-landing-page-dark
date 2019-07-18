@@ -257,4 +257,29 @@ button {
     }
   }
 }
+// Sign Up Styling
+.sign-up {
+  .card__sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-bg;
+    padding: 20px;
+    width: 90vw;
+  }
+
+  &__form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  &__form--input {
+    display: block;
+    border-radius: 30px;
+    padding: 20px 50px;
+  }
+}
+
 }
