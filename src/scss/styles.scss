@@ -89,4 +89,40 @@ button {
   border-radius: 30px;
   margin-top: 30px;
 }
+
+// Header Section
+
+.site-header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 85vw;
+  }
+
+  background-color: $secondary-bg;
+
+  .logo {
+    height: 40px;
+  }
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+}
+
 }
