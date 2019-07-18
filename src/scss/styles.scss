@@ -125,4 +125,27 @@ button {
   }
 }
 
+// Hero Section
+
+.hero {
+  background-color: $secondary-bg;
+  width: 100vw;
+
+  &__img {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    line-height: 1.6;
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__body {
+    text-align: center;
+  }
+}
+
 }
