@@ -192,4 +192,17 @@ button {
     margin-left: 8px;
   }
 }
+
+// Card Styling
+.card {
+  width: 70%;
+  background-color: $testimonials-bg;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  position: relative;
+
+  &__text {
+    text-align: left;
+  }
+}
 }
