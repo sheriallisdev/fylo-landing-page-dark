@@ -1,7 +1,7 @@
 // Variables
 
-$body-text: 'Open Sans', sans-serif;
-$heading-text: 'Raleway', sans-serif;
+$body-text: "Open Sans", sans-serif;
+$heading-text: "Raleway", sans-serif;
 
 $primary-bg: hsl(218, 28%, 13%);
 $secondary-bg: hsl(217, 28%, 15%);
@@ -14,7 +14,79 @@ $secondary-accent: hsl(198, 60%, 50%);
 $white: hsl(0, 0%, 100%);
 
 // Base Styles
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 
 body {
-  font-family: $body-text;  
+  font-family: $body-text;
+  font-size: 1rem;
+  background-color: $primary-bg;
+  color: $white;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+p {
+  padding: 30px;
+}
+
+h1,
+h2 {
+  font-family: $heading-text;
+}
+
+section {
+  padding-top: 80px 20px 20px 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  padding: 40px;
+  max-width: 1440px;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: $heading-text;
+  background: $secondary-accent;
+  background-image: linear-gradient(
+    to right,
+    $primary-accent 0%,
+    $secondary-accent 90%
+  );
+  font-weight: 700;
+  padding: 20px 80px;
+  color: $white;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
 }
