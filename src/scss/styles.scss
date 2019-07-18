@@ -205,4 +205,56 @@ button {
     text-align: left;
   }
 }
+
+// Testimonials Styling
+
+.testimonials {
+  .card {
+    &__text {
+      text-align: left;
+    }
+
+    &:first-of-type::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -40px;
+      background-image: url("../images/bg-quotes.png");
+      background-repeat: no-repeat;
+      z-index: -99999;
+    }
+  }
+
+  .user {
+    &__info {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    &__img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    &__data {
+      p {
+        padding: 0;
+        margin-left: 8px;
+        text-align: left;
+      }
+    }
+
+    &__data--name {
+      font-weight: 700;
+      font-weight: 0.8rem;
+    }
+
+    &__data--desc {
+      font-size: 0.8rem;
+    }
+  }
+}
 }
