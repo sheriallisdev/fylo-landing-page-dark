@@ -148,4 +148,20 @@ button {
   }
 }
 
+// Features Section
+
+.features {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__icon {
+    padding: 40px;
+  }
+}
+
 }
