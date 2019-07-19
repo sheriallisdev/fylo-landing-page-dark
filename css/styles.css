@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 14px; }
 
 *,
 *::after,
@@ -28,7 +29,7 @@ h2 {
 
 section {
   padding-top: 80px 20px 20px 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,8 +40,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  padding: 40px;
+  padding: 20px;
   max-width: 1440px; }
 
 .site-container {
@@ -64,6 +64,7 @@ button {
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
   background-color: #1c2431; }
   .site-header .container {
     display: flex;
@@ -72,9 +73,9 @@ button {
     align-items: center;
     padding: 20px;
     margin-bottom: 30px;
-    width: 85vw; }
+    width: 95vw; }
   .site-header .logo {
-    height: 40px; }
+    height: 30px; }
 
 .navbar {
   list-style: none;
@@ -82,7 +83,7 @@ button {
   .navbar a {
     color: white;
     text-decoration: none;
-    margin-left: 30px; }
+    margin-left: 20px; }
 
 .hero {
   background-color: #1c2431;
@@ -103,7 +104,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px; }
+  margin-bottom: 60px; }
+  .features__item:last-of-type {
+    margin-bottom: 0; }
 
 .features__icon {
   padding: 40px; }
@@ -178,13 +181,13 @@ button {
   width: 90vw; }
 
 .sign-up__form {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  width: 60%; }
+  flex-direction: column; }
 
 .sign-up__form--input {
   display: block;
+  border: none;
   border-radius: 30px;
   padding: 20px 50px; }
 

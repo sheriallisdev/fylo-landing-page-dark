@@ -51,7 +51,7 @@ h2 {
 
 section {
   padding-top: 80px 20px 20px 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,8 +63,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  padding: 40px;
+  // width: 95vw;
+  padding: 20px;
   max-width: 1440px;
 }
 
@@ -97,6 +97,7 @@ button {
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 
   .container {
     display: flex;
@@ -105,13 +106,13 @@ button {
     align-items: center;
     padding: 20px;
     margin-bottom: 30px;
-    width: 85vw;
+    width: 95vw;
   }
 
   background-color: $secondary-bg;
 
   .logo {
-    height: 40px;
+    height: 30px;
   }
 }
 
@@ -122,7 +123,7 @@ button {
   a {
     color: $white;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -157,7 +158,11 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
@@ -271,14 +276,14 @@ button {
   }
 
   &__form {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 60%;
   }
 
   &__form--input {
     display: block;
+    border: none;
     border-radius: 30px;
     padding: 20px 50px;
   }
