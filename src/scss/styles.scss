@@ -306,6 +306,9 @@ button {
 // Footer Styling
 
 .site-footer {
+  background-color: $footer-bg;
+  width: 100%;
+
   .container {
     align-items: flex-start;
   }
