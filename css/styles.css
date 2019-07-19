@@ -172,35 +172,85 @@ button {
 .testimonials .user__data--desc {
   font-size: 0.8rem; }
 
-.sign-up .card__sign-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1c2431;
-  padding: 20px;
-  width: 90vw; }
+.sign-up {
+  margin-bottom: 60px; }
+  .sign-up .card__sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c2431;
+    padding: 20px;
+    width: 90vw; }
+  .sign-up__form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; }
+  .sign-up__form--input {
+    display: block;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px; }
 
-.sign-up__form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column; }
+.site-footer .container {
+  align-items: flex-start; }
 
-.sign-up__form--input {
-  display: block;
-  border: none;
-  border-radius: 30px;
-  padding: 20px 50px; }
+.site-footer p {
+  text-align: left;
+  padding: 10px 35px;
+  position: relative; }
 
-.site-footer {
+.site-footer .location__info::before {
+  content: "";
+  background-image: url("../images/icon-location.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.site-footer .contact {
+  margin-bottom: 60px; }
+  .site-footer .contact__phone::before {
+    content: "";
+    background-image: url("../images/icon-phone.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .site-footer .contact__email::before {
+    content: "";
+    background-image: url("../images/icon-email.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .site-footer .contact a {
+    color: white;
+    text-decoration: none; }
+
+.site-footer .logo {
+  margin-bottom: 50px; }
+
+.site-footer .footer-nav {
+  list-style: none;
+  margin-bottom: 40px; }
+  .site-footer .footer-nav li {
+    padding: 10px 0; }
+
+.site-footer .social-media {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px; }
-  .site-footer p {
-    text-align: left; }
-  .site-footer .icon {
-    padding-right: 18px; }
-  .site-footer .footer-nav {
-    list-style: none; }
+  width: 100%;
+  justify-content: center; }
+  .site-footer .social-media__icons {
+    display: flex;
+    justify-content: space-around;
+    width: 150px; }
+  .site-footer .social-media .fab {
+    font-size: 14px;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

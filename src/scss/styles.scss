@@ -278,6 +278,8 @@ button {
 
 // Sign Up Styling
 .sign-up {
+  margin-bottom: 60px;
+
   .card__sign-up {
     display: flex;
     flex-direction: column;
@@ -304,20 +306,69 @@ button {
 // Footer Styling
 
 .site-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  .container {
+    align-items: flex-start;
+  }
 
   p {
     text-align: left;
+    padding: 10px 35px;
+    position: relative;
   }
 
-  .icon {
-    padding-right: 18px;
+  .location{
+
+    &__info::before{
+      @include icon(url('../images/icon-location.svg'));
+    }
+  }
+  .contact{
+    &__phone::before{
+      @include icon(url('../images/icon-phone.svg'));
+    }
+
+    &__email::before{
+      @include icon(url('../images/icon-email.svg'));
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    margin-bottom: 50px;
   }
 
   .footer-nav {
+    li {
+      padding: 10px 0;
+    }
+
     list-style: none;
+    margin-bottom: 40px;
+  }
+
+  .social-media{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__icons{
+      display: flex;
+      justify-content: space-around;
+      width: 150px;
+    }
+
+    .fab {
+      font-size: 14px;
+      padding: 7px;
+      border: 1px solid $white;
+      border-radius: 50%;
+    }
+
   }
 }
