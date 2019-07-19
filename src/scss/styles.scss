@@ -13,6 +13,18 @@ $secondary-accent: hsl(198, 60%, 50%);
 
 $white: hsl(0, 0%, 100%);
 
+// Mixins
+
+@mixin icon($image){
+  content: "";
+  background-image: $image;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 // Base Styles
 html {
   box-sizing: border-box;
