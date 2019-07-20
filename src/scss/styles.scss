@@ -132,10 +132,8 @@ button {
   padding-top: 20px;
 
   .container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     margin-bottom: 30px;
     width: 100%;
@@ -210,7 +208,6 @@ button {
   z-index: 99999;
 
   @media (min-width: $desktop) {
-    display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
@@ -294,6 +291,9 @@ button {
 // Testimonials Styling
 
 .testimonials {
+  margin-bottom: 0;
+  padding-bottom: 100px;
+
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-around;
@@ -363,12 +363,12 @@ button {
     background-color: $secondary-bg;
     padding: 20px;
     width: 90vw;
+    position: absolute;
+    z-index: 99999;
+    box-shadow: 8px 6px 14px rgba(0, 0, 0, 0.2);
     @media (min-width: $desktop) {
-      box-shadow: 8px 6px 14px rgba(0, 0, 0, 0.2);
       padding: 50px;
       width: 900px;
-      position: absolute;
-      z-index: 99999;
     }
   }
 
@@ -405,14 +405,20 @@ button {
 .site-footer {
   background-color: $footer-bg;
   width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 
-  @media (min-width: $desktop) {
-    margin-top: 200px;
-    padding-top: 200px;
-  }
+  &__container {
+    padding: 250px 20px 20px 20px;
 
-  .container {
-    align-items: flex-start;
+    @media (min-width: $desktop) {
+      padding-top: 250px;
+      display: grid;
+      grid-template-rows: 100px 1fr;
+      grid-template-columns: 450px 300px 150px 150px 250px;
+      grid-column-gap: 25px;
+    }
   }
 
   p {
@@ -445,6 +451,9 @@ button {
 
   .logo {
     margin-bottom: 50px;
+    @media (min-width: $desktop) {
+      grid-column: 1 / 6;
+    }
   }
 
   .footer-nav {
@@ -457,19 +466,24 @@ button {
   }
 
   .social-media {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-
     &__icons {
       display: flex;
       justify-content: space-around;
       width: 150px;
+      margin: 0 auto;
+    }
+
+    .fa-facebook-f,
+    .fa-instagram {
+      padding: 7px 10px;
+    }
+
+    .fa-twitter {
+      padding: 7px;
     }
 
     .fab {
       font-size: 14px;
-      padding: 7px;
       border: 1px solid $white;
       border-radius: 50%;
     }
