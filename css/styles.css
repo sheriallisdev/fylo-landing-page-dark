@@ -63,9 +63,18 @@ button {
   color: white;
   border: none;
   border-radius: 30px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  transition: all 0.2s ease-in-out; }
   button:hover {
+    background: #339ecc;
+    box-shadow: 8px 6px 14px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
     cursor: pointer; }
+
+a:focus,
+input:focus,
+button:focus {
+  border: 3px solid #65e2d9; }
 
 .site-header {
   width: 100vw;
@@ -88,7 +97,13 @@ button {
   .navbar a {
     color: white;
     text-decoration: none;
-    margin-left: 20px; }
+    padding: 12px;
+    transition: all 0.1s ease-in;
+    border: 4px solid transparent; }
+    .navbar a:hover {
+      color: #65e2d9;
+      border: 4px solid #65e2d9;
+      border-radius: 20px; }
     @media (min-width: 1440px) {
       .navbar a {
         margin-left: 40px; } }
@@ -178,7 +193,11 @@ button {
     color: #65e2d9;
     text-decoration: none;
     padding-bottom: 8px;
-    border-bottom: 2px solid #65e2d9; }
+    border-bottom: 2px solid #65e2d9;
+    transition: all 0.2s ease-in; }
+    .about__link:hover {
+      color: #339ecc;
+      border-bottom: 2px solid #339ecc; }
   .about .fa-arrow-circle-right {
     margin-left: 8px; }
 
@@ -326,6 +345,13 @@ button {
     margin-bottom: 40px; }
     .site-footer .footer-nav li {
       padding: 10px 0; }
+    .site-footer .footer-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: all 0.1s ease-in; }
+      .site-footer .footer-nav a:hover {
+        color: #65e2d9; }
   .site-footer .social-media__icons {
     display: flex;
     justify-content: space-around;
@@ -340,5 +366,8 @@ button {
     font-size: 14px;
     border: 1px solid white;
     border-radius: 50%; }
+    .site-footer .social-media .fab:hover {
+      color: #65e2d9;
+      border: 1px solid #65e2d9; }
 
 /*# sourceMappingURL=styles.css.map */

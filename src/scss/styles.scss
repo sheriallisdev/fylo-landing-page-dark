@@ -118,9 +118,19 @@ button {
   border: none;
   border-radius: 30px;
   margin-top: 30px;
+  transition: all 0.2s ease-in-out;
   &:hover {
+    background: $secondary-accent;
+    box-shadow: 8px 6px 14px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
     cursor: pointer;
   }
+}
+
+a:focus,
+input:focus,
+button:focus {
+  border: 3px solid $primary-accent;
 }
 
 // Header Section
@@ -153,7 +163,15 @@ button {
   a {
     color: $white;
     text-decoration: none;
-    margin-left: 20px;
+    padding: 12px;
+    transition: all 0.1s ease-in;
+    border: 4px solid transparent;
+    &:hover {
+      color: $primary-accent;
+      border: 4px solid $primary-accent;
+      // padding: 10px;
+      border-radius: 20px;
+    }
     @media (min-width: $desktop) {
       margin-left: 40px;
     }
@@ -268,6 +286,11 @@ button {
     text-decoration: none;
     padding-bottom: 8px;
     border-bottom: 2px solid $primary-accent;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: $secondary-accent;
+      border-bottom: 2px solid $secondary-accent;
+    }
   }
 
   .fa-arrow-circle-right {
@@ -411,7 +434,6 @@ button {
 
   &__container {
     padding: 250px 20px 20px 20px;
-
     @media (min-width: $desktop) {
       padding-top: 250px;
       display: grid;
@@ -463,6 +485,16 @@ button {
 
     list-style: none;
     margin-bottom: 40px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      padding: 10px;
+      transition: all 0.1s ease-in;
+      &:hover {
+        color: $primary-accent;
+      }
+    }
   }
 
   .social-media {
@@ -486,6 +518,10 @@ button {
       font-size: 14px;
       border: 1px solid $white;
       border-radius: 50%;
+      &:hover {
+        color: $primary-accent;
+        border: 1px solid $primary-accent;
+      }
     }
   }
 }
