@@ -8,6 +8,7 @@ html {
 *,
 *::after,
 *::before {
+  max-width: 100%;
   box-sizing: inherit;
   padding: 0;
   margin: 0; }
@@ -56,8 +57,9 @@ button {
   font-family: "Raleway", sans-serif;
   background: #339ecc;
   background-image: linear-gradient(to right, #65e2d9 0%, #339ecc 90%);
+  font-size: 1rem;
   font-weight: 700;
-  padding: 20px 80px;
+  padding: 15px 60px;
   color: white;
   border: none;
   border-radius: 30px;
